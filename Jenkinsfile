@@ -5,17 +5,17 @@ node{
             sh'echo "build app"'
         }
         catch(Exeption e){
-            sh'echo error happened'
+            sh'echo "error happened"'
             throw e
         }
         
     }
     stage('test'){
         if (env.Branch_name == "main"){
-            sh'echo branch name is main'
+            sh'echo "branch name is main"'
         }
         else{
-            sh'echo skip test'
+            sh'echo "skip test"'
 
         }
     }
