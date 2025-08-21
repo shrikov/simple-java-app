@@ -4,7 +4,7 @@ node{
         try{
             sh'echo "build app"'
         }
-        catch(Exeption e){
+        catch(Exception e){
             sh'echo "error happened"'
             throw e
         }
